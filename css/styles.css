@@ -2,7 +2,7 @@
     --blanco:#fff;
     --negro:#000;
     --celeste:#86E3CE;
-    --verde:#D0E6A5;
+    --verde:#c4e485;
     --amarillo:#FFDD94;
     --rojo:#FA897B;
     --violeta:#CCABD8;
@@ -273,7 +273,7 @@ img{
     color:var(--negro);
     border:1px solid var(--verde);
     transform:scale(1.1);
-    
+    font-weight: 700;
 
 }
 @media(min-width:768px){
@@ -307,6 +307,14 @@ img{
     }
 
     
+}
+.card-contenedor h2{
+    margin:0;
+    margin-top:1rem;
+}
+.card-contenedor h3{
+    margin:0;
+    margin-bottom:1rem;
 }
 .card{
     background-color:var(--rojo);
@@ -356,4 +364,16 @@ img{
 .dia-3 p:nth-child(6),
 .dia-3 p:nth-child(8){
     background-color:#fb89df
+}
+
+@media(min-width:768px){
+    .noticias{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .noticias h2{
+        text-align: center;
+        margin:0;
+    }
 }
