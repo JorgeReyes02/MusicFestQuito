@@ -443,7 +443,6 @@ img{
 .campo input,
 .campo select{
     font-family: var(--fuentePrincipal);
-    padding:.5rem;
     border-radius: 10px;
     outline: none;
     border: 1px solid black;
