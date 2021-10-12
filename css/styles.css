@@ -315,10 +315,13 @@ img{
 .card-contenedor h3{
     margin:0;
     margin-bottom:1rem;
+    color: var(--celeste);
 }
-.card{
-    background-color:var(--rojo);
-    
+.card {
+    background-color: var(--rojo);
+}
+.plaza{
+    width:100%;
 }
 .card-info p{
     padding:2rem;
@@ -425,4 +428,64 @@ img{
     background-color:var(--negro) ;
     color:var(--blanco);
     transform: scale(1.1);
+}
+
+/** FORMULARIO **/
+.formulario{
+    max-width: 60rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--negro);
+}
+
+.campo input,
+.campo select{
+    font-family: var(--fuentePrincipal);
+    padding:.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1rem;
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding:1rem;
+}
+.formulario input[type="submit"]{
+    padding: .5rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    text-align: center;
+    transition-property: transform background-size;
+    transition-duration: .3s;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: 9rem;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white    ;
+
+
+}
+.formulario input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: var(--blanco);
+    color:var(--negro);
+  
+}
+
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label{
+    font-family: var(--fuenteSecundaria);
+    color: var(--amarillo);
+    flex-basis: 10rem;
+    font-size: 2rem;
+    
 }
